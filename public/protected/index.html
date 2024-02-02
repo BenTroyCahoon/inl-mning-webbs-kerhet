@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyddad sida</title>
+    <link rel="stylesheet" href="styleing.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Indic+Siyaq+Numbers&display=swap');
+    </style>
+
+    <script src="https://kit.fontawesome.com/9b5adaf242.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="treesbox">
+        <div class="textinbox">
+            <h1>Couriosity and control.</h1>
+        </div>
+        <img class="stripez" src="/40588422039440.jpg" alt="" style="width: 100%;">
+
+    </div>
+    <div id="bigwrapper">
+
+        <!-- <div id="usernameDisplay"></div> -->
+
+        <!-- Logga ut-länk eller knapp -->
+        <!-- <a href="/logout">Logga ut</a> -->
+
+        <div id="usernameDisplay"></div>
+        <div id="welcomebox">
+            <h1>Du är nu inloggad! Varmt välkommen.</h1>
+            <h2>Du har nu tillgång till denna fantastiska sida.</h2>
+
+            <i class="fa-regular fa-heart"></i>
+
+            <div id="usernameDisplay"></div>
+            <a href="/logout">Logga ut</a>
+        </div>
+
+
+
+        <div id="user-info">
+            <!-- Användarens information kommer att visas här -->
+        </div>
+        <div id="addpostbox">
+
+            <form id="addPostForm">
+                <input type="text" id="postTitle" placeholder="Title">
+
+                <textarea id="postContent" placeholder="Content"></textarea><br>
+                <input id="csrf-post" type="hidden" name="_csrf" value="csrfToken" />
+                <button id="addPostknapp" type="submit">Add Post</button><br>
+
+            </form>
+
+            <div id="blog-posts-container">
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="renderUsername.js"></script>
+    <script src="blogPosts.js"></script>
+
+
+
+</body>
+
+</html>

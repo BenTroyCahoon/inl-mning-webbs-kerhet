@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inlamningwebbsakerhet</title>
+    <link rel="stylesheet" href="protected/styleing.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Indic+Siyaq+Numbers&display=swap');
+    </style>
+   
+</head>
+
+<body>
+    <div class="treesbox">
+        <div class="textinbox">
+            <h1>Couriosity and control.</h1>
+        </div>
+        <img class="stripez" src="40588422039440.jpg" alt="" style="width: 100%;">
+
+    </div>
+
+    <div id="smallcontainer">
+        <div id="registerbox">
+            <h1>Välkommen.</h1>
+            <h1>Logga in eller registrera dig.</h1>
+         
+            <form id="registerForm" action="/register" method="POST">
+                <div>
+                    <!-- <label for="username">Användarnamn:</label> -->
+                    <input type="text" id="username" name="username" required placeholder="välj ett användarnamn">
+                </div>
+                <div>
+                    <!-- <label for="password">Lösenord:</label> -->
+                    <input type="password" id="password" name="password" required placeholder="Välj ett lösenord">
+                </div>
+                <div>
+                    <button type="submit">Registrera</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- <div id="log-bar"> -->
+        <div id="inlogg">
+            <form action="/login" method="post">
+                <!-- <h1>Logga in</h1> -->
+                <input type="text" name="username" placeholder="Username"><br>
+                <input type="password" name="password" placeholder="Password"><br>
+                <input type="submit" value="Login">
+            </form>
+            <h1>Login with GitHub</h1>
+            <a href="/auth/github">
+                <button>Login with GitHub</button>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+
+
+
+</html>
